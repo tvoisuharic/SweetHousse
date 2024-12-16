@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet House - Главная</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <img src="img/Кот.png" alt="Кот">
+        <div class="logo">Sweet House</div>
+        <nav>
+            <a href="index.html">Что вы ищете?</a>
+            <a href="cart.html">Корзина (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+    <!-- Описание магазина -->
+    <section>
+        <h1>
+            <img src="img/КартинкаДивана.png" alt="img">
+        </h1>
+        <div class="about">
+            <p>
+                Сядьте поудобнее и расслабьтесь. Мы производим мягкие и уютные диваны, в которые можно погрузиться с
+                головой. Независимо от того, ищете ли вы диван с местом для хранения, модульный диван по индивидуальному
+                заказу или большой угловой диван для всей семьи. У нас есть эти и многие другие модели диванов на выбор.
+            </p>
+        </div>
+
+
+    </section>
+    <!-- Сортировка товаров -->
+    <label for="sort">Сортировать:</label>
+    <select id="sort">
+        <option value="price">По цене</option>
+        <option value="name">По названию</option>
+    </select>
+
+    <!-- Секция товаров -->
+    <section class="products">
+        <h1>Наши диваны</h1>
+        <div class="product-list" id="product-list">
+            <!-- Товар 1 -->
+            <div class="product" data-name="VIMLE" data-price="80000">
+                <a href="cart1.html">
+                    <img src="img/Диван1.png" alt="VIMLE">
+                </a>
+                <h3>VIMLE</h3>
+                <p>80 000 руб.</p>
+                <button class="add-to-cart" data-id="1" data-name="VIMLE" data-price="80000"
+                    data-image="img/Диван1.png">
+                    Добавить в корзину
+                </button>
+
+            </div>
+
+            <!-- Товар 2 -->
+            <div class="product" data-name="LANDSKRONA" data-price="66000">
+                <a href="cart2.html">
+                    <img src="img/Диван2.png" alt="LANDSKRONA">
+                </a>
+                <h3>LANDSKRONA</h3>
+                <p>66 000 руб.</p>
+                <button class="add-to-cart" data-id="2" data-name="LANDSKRONA" data-price="66000"
+                    data-image="img/Диван2.png">
+                    Добавить в корзину
+                </button>
+            </div>
+            <!-- Товар 3 -->
+            <div class="product" data-name="EKTORP" data-price="60000">
+                <a href="cart3.html">
+                    <img src="img/Диван3.png" alt="EKTORP">
+                </a>
+                <h3>EKTORP</h3>
+                <p>60 000 руб.</p>
+                <button class="add-to-cart" data-id="3" data-name="EKTORP" data-price="60000"
+                    data-image="img/Диван3.png">
+                    Добавить в корзину
+                </button>
+            </div>
+            <!-- Товар 4 -->
+            <div class="product" data-name="GLOSTAD" data-price="15480">
+                <a href="cart4.html">
+                    <img src="img/Диван4.png" alt="GLOSTAD">
+                </a>
+
+                <h3>GLOSTAD</h3>
+                <p>15 480 руб.</p>
+                <button class="add-to-cart" data-id="4" data-name="GLOSTAD" data-price="15480"
+                    data-image="img/Диван4.png">
+                    Добавить в корзину
+                </button>
+            </div>
+            <!-- Товар 5 -->
+            <div class="product" data-name="LANDSKRONA" data-price="132000">
+                <a href="cart5.html">
+                    <img src="img/Диван5.jpg" alt="LANDSKRONA">
+                </a>
+
+                <h3>LANDSKRONA</h3>
+                <p>132 000 руб.</p>
+                <button class="add-to-cart" data-id="5" data-name="LANDSKRONA" data-price="132000"
+                    data-image="img/Диван5.jpg">
+                    Добавить в корзину
+                </button>
+            </div>
+            <!-- Товар 6 -->
+            <div class="product" data-name="KIVIK" data-price="40560">
+                <a href="cart6.html"><img src="img/Диван6.jpg" alt="KIVIK">
+                </a>
+                <h3>KIVIK</h3>
+                <p>40 560 руб.</p>
+                <button class="add-to-cart" data-id="6" data-name="KIVIK" data-price="40560"
+                    data-image="img/Диван6.jpg">
+                    Добавить в корзину
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Акции -->
+    <section>
+        <div class="container">
+            <h1>
+                Доставка к Рождеству
+            </h1>
+            <div class="about">
+                <p>
+                    Закажите до 17 декабря, и мы доставим ваш диван в выбранную вами комнату по цене от 2500 рублей.
+                    Спешите? Выберите экспресс-доставку при оформлении заказа, чтобы получить свой диван через 1-3 дня.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Форма заказа -->
+    <section>
+        <Div class="forma">
+            <div class="order-form">
+                <h2>
+                    Есть вопросы? С вами свяжется наш консультант!
+
+                </h2>
+                <form action="#" method="post">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="text" placeholder="Ваша Фамилия" required>
+                    <input type="tel" placeholder="Номер телефона" required>
+                    <input type="email" placeholder="Email" required>
+                    <button type="submit">Оформить заказ</button>
+                </form>
+            </div>
+        </Div>
+    </section>
+
+    <footer class="footer">
+        <Div class="info">
+            Екатеринбург, Улица, Дом
+            Email: SweetHouse@gmail.com
+        </Div>
+        <Div class="info">
+            Разработано Розановой Анной и Обоскаловой Еленой
+        </Div>
+    </footer>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

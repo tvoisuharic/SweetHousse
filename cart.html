@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <img src="img/Кот.png" alt="Кот">
+        <div class="logo">Sweet House</div>
+        <nav>
+            <a href="index.html">На главную страницу</a>
+            <a href="cart.html">Корзина</a>
+        </nav>
+    </header>
+
+    <!-- Корзина -->
+    <section class="cart">
+        <h1>Ваша корзина</h1>
+        <div id="cart-items"></div>
+        <h3>Итого: <span id="total-price">0</span> руб.</h3>
+        <button onclick="checkout()">Оформить заказ</button>
+    </section>
+
+
+    <!-- Форма заказа -->
+    <section>
+        <Div class="forma">
+            <div class="order-form">
+                <h2>
+                    Есть вопросы? С вами свяжется наш консультант!
+
+                </h2>
+                <form action="#" method="post">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="text" placeholder="Ваша Фамилия" required>
+                    <input type="tel" placeholder="Номер телефона" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Страна" required>
+                    <input type="text" placeholder="Адрес" required>
+                    <input type="text" placeholder="Название банка" required>
+                    <input type="text" placeholder="Номер карты" required>
+                    <input type="text" placeholder="Дата окончания действия карты" required>
+                    <input type="text" placeholder="CVV" required>
+                    <button type="submit">Оплатить</button>
+                </form>
+            </div>
+        </Div>
+    </section>
+<br>
+
+<section>
+    <h1>
+        <img src="img/КартинкаДивана.png" alt="img">
+    </h1>
+   
+
+
+</section>
+ 
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
